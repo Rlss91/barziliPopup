@@ -1,0 +1,58 @@
+.alert-rlss-center-div {
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: red;
+    border-radius: 3rem;
+    z-index: 1000000;
+    /*background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* border: 1px solid red; */
+    /* font-size: 2vw; */
+}
+
+.alert-rlss-center-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-rlss-anim-dev {
+    animation-name: alert-rlss-grow-anim;
+    animation-duration: 1s;
+}
+
+.alert-rlss-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1000000;
+}
+
+.alert-rlss-hidden {
+    display: none;
+}
+
+@keyframes alert-rlss-grow-anim {
+    from {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        font-size: 0;
+    }
+    to {
+        width: 50vw;
+        height: 50vh;
+        opacity: 1;
+    }
+}
